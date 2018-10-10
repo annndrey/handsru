@@ -28,7 +28,7 @@ def find_phones(URL):
         normalised = unicodedata.normalize("NFKD", decoded)
         phones =re_phone.findall(normalised)
         phones = [p.replace("(", "").replace(")", "").replace("-", "").replace(" ", "") for p in phones]
-
+        phones = [p if len(p) > 7 else "8495" + p for p in phones]
         return phones
 
 
