@@ -42,8 +42,7 @@ class Testing(unittest.TestCase):
         url = 'https://repetitors.info'
         self.assertEqual(find_phones(url), ['84955405676', '88005555676'])
 
-#URLS = [' https://hands.ru/company/about', 'https://repetitors.info']
 
-#for u in URLS:
-#    find_phones(u)
-unittest.main()
+
+if __name__ == "__main__":
+    unittest.main()
